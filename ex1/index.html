@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Local Community Event Portal</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    body {
+      background-image: url('background.png');
+      background-color: #f4f4f9;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-position: center;
+    }
+  </style>
+</head>
+<body>
+
+  <header id="mainHeader">
+    <h1>MetroEvent Portal</h1>
+    <nav>
+      <ul class="nav-menu">
+        <li class="nav-item"><a href="#events" class="nav-link">Events</a></li>
+        <li class="nav-item"><a href="#schedule" class="nav-link">Schedule</a></li>
+        <li class="nav-item"><a href="#bulletin" class="nav-link">Bulletin</a></li>
+        <li class="nav-item"><a href="#register" class="nav-link">Submit Event</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section style="text-align: center; padding: 30px;">
+      <h2 style="color: red;">Urgent Weather Alert: Indoor Contingencies Active</h2>
+      <p>Due to forecasted rain, outdoor activities will move to the civic center gym.</p>
+    </section>
+
+    <section id="events" class="events-container">
+      <h2 class="section-title">Local Events</h2>
+      
+      <div class="events-grid">
+        <article class="eventCard">
+          <h3>Community Cleanup</h3>
+          <p>Join us at Central Park this Saturday. Gloves and trash bags will be provided to all volunteers.</p>
+        </article>
+
+        <article class="eventCard">
+          <h3>Pottery Workshop</h3>
+          <p>Learn clay molding and throwing from local art instructors. Materials and glaze included.</p>
+        </article>
+
+        <article class="eventCard">
+          <h3>Neighborhood Cook-off</h3>
+          <p>Sample family recipes and vote for your favorite dishes. Live music and local vendor booths.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="comparison-section">
+      <h2 class="section-title">Layout Control: Visibility vs Display</h2>
+      
+      <p>Visibility Hidden (Box 2 is invisible but leaves empty space):</p>
+      <div class="comparison-container">
+        <div class="demo-item">Box 1</div>
+        <div class="demo-item hidden-visibility">Box 2</div>
+        <div class="demo-item">Box 3</div>
+      </div>
+      
+      <p>Display None (Box 2 is hidden and collapses completely):</p>
+      <div class="comparison-container">
+        <div class="demo-item">Box 1</div>
+        <div class="demo-item hidden-display">Box 2</div>
+        <div class="demo-item">Box 3</div>
+      </div>
+    </section>
+
+    <section id="schedule" class="table-section">
+      <h2 class="section-title">Event Schedule</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Date</th>
+            <th>Time</th>
+            <th>Activity</th>
+            <th>Location</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Saturday</td>
+            <td>09:00 AM</td>
+            <td>Park Cleanup Gathering</td>
+            <td>Central Park</td>
+          </tr>
+          <tr>
+            <td>Saturday</td>
+            <td>02:00 PM</td>
+            <td>Pottery Introduction</td>
+            <td>Art Center</td>
+          </tr>
+          <tr>
+            <td>Sunday</td>
+            <td>11:00 AM</td>
+            <td>Cook-off Opening</td>
+            <td>Civic Square</td>
+          </tr>
+          <tr>
+            <td>Sunday</td>
+            <td>04:00 PM</td>
+            <td>Awards Ceremony</td>
+            <td>Civic Square</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section id="bulletin" class="bulletin-section">
+      <h2 class="section-title">Weekly Bulletin</h2>
+      <article class="news-article">
+        <h3>Downtown Project Approved</h3>
+        <p>The city council has approved the downtown pedestrian corridor plans. The construction will widen sidewalks and introduce dedicated bicycle paths along Main Street. Detours will be marked, and the project is expected to finish in six months.</p>
+        
+        <h3>Library Coding Program</h3>
+        <p>A free programming program for teenagers will start next month at the library. Laptops are provided, and mentors from local firms will teach HTML and CSS basics. Register at the information desk.</p>
+      </article>
+    </section>
+
+    <section id="register" class="form-section">
+      <form>
+        <h2 class="section-title">Propose an Event</h2>
+        
+        <label for="eventName">Event Name</label>
+        <input type="text" id="eventName" class="form-input" placeholder="e.g. Park Run">
+        
+        <label for="eventDesc">Event Description</label>
+        <textarea id="eventDesc" class="form-input" placeholder="Enter description..." rows="4"></textarea>
+        
+        <button type="submit" class="submit-btn">Submit Event</button>
+      </form>
+    </section>
+  </main>
+
+  <footer style="text-align: center; padding: 20px; border-top: 1px solid #cccccc; margin-top: 30px;">
+    <p>&copy; 2026 Local Community Event Portal.</p>
+  </footer>
+
+</body>
+</html>
